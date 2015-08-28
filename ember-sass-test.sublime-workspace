@@ -11,6 +11,25 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "app/styles/app.scss",
+			"settings":
+			{
+				"buffer_size": 169,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "/* global require, module */\nvar EmberApp = require('ember-cli/lib/broccoli/ember-app');\nvar funnel = require('ember-cli/node_modules/broccoli-funnel');\nvar mergeTrees = require('broccoli-merge-trees');\n\n\nmodule.exports = function(defaults) {\n  var app = new EmberApp(defaults, {\n    // Add options here\n  });\n\n  app.import('bower_components/bootstrap/dist/js/bootstrap.js');\n  var fontawesome = new funnel('bower_components/font-awesome/fonts', {\n    srcDir: '/',\n    destDir: 'fonts'\n  });\n  var merged = mergeTrees([app.toTree(), fontawesome], {\n     overwrite: true\n  });\n\n    return app.toTree(merged);\n\n};\n",
+			"file": "ember-cli-build.js",
+			"file_size": 651,
+			"file_write_time": 130852273924064591,
+			"settings":
+			{
+				"buffer_size": 612,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -169,8 +188,63 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/styles/app.scss",
+					"settings":
+					{
+						"buffer_size": 169,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								166,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "ember-cli-build.js",
+					"settings":
+					{
+						"buffer_size": 612,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								313,
+								607
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
