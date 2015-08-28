@@ -1,5 +1,5 @@
 # Ember-sass-test
-[![Build Status](https://travis-ci.org/miclip/ember-sass-base.svg?branch=master)](https://travis-ci.org/miclip/ember-sass-base)
+[![Build Status](https://travis-ci.org/miclip/ember-sass-test.svg?branch=master)](https://travis-ci.org/miclip/ember-sass-test)
 
 Project to test out using Sass in Ember with bootstrap (4.0.0 alpha), fontawesome & and overriding brand variables
 
